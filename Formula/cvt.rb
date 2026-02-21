@@ -5,21 +5,21 @@
 class Cvt < Formula
   desc "Contract Validation Tool - Validate HTTP interactions against OpenAPI specs"
   homepage "https://github.com/sahina/cvt"
-  version "0.2"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sahina/cvt/releases/download/v0.2/cvt_0.2_darwin_amd64.tar.gz"
-      sha256 "a772396116a60d5f9eaf99fa6e305dc27ea1cf5d1d765552b50cdb1ee0223f92"
+      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_darwin_amd64.tar.gz"
+      sha256 "6fd83f82b912efbc6352109a4fd45a09ec2bbe1b99e640d6367f22678ae4ba68"
 
       def install
         bin.install "cvt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sahina/cvt/releases/download/v0.2/cvt_0.2_darwin_arm64.tar.gz"
-      sha256 "1e8ef200770ef019f0bd8125a3827ad448dbe4e42ad517673d2af243a60ca151"
+      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_darwin_arm64.tar.gz"
+      sha256 "bd8acb63664dacdb45fd6f16e92c732b9273de5894ce28020ea09d44558aae09"
 
       def install
         bin.install "cvt"
@@ -29,15 +29,15 @@ class Cvt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/cvt/releases/download/v0.2/cvt_0.2_linux_amd64.tar.gz"
-      sha256 "eef5afc7803e47ba7b3aa439f8804da1b5c9028ed6336d7df029b6575909ce5c"
+      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_linux_amd64.tar.gz"
+      sha256 "1c6b64ffe3f4cb94214343f0e42623a4361232242099d32292a0f79b23b62059"
       def install
         bin.install "cvt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/cvt/releases/download/v0.2/cvt_0.2_linux_arm64.tar.gz"
-      sha256 "b9340563e30d53dea841441de024a08ceddf934eea34819091fc161f79930881"
+      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_linux_arm64.tar.gz"
+      sha256 "e6c1ede76704c90f238059bd212986759b402a9b022f582da658162f2df617b0"
       def install
         bin.install "cvt"
       end
