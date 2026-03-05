@@ -9,31 +9,31 @@ class Ironflow < Formula
   desc "Ironflow - Event-driven backend platform"
   homepage "https://github.com/sahina/ironflow"
   license "MIT"
-  version "0.7.0"
+  version "0.7.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.0/ironflow_0.7.0_darwin_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_darwin_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4e5f9fb328396ebe3ffe0c9b01b70888e74d8a0349bd334c40151d669c6e5c8f"
+      sha256 "0c2e94849faaee6d2e8c77b9d40c9207a4dfe566287a83f1bf96e14503799521"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.0/ironflow_0.7.0_darwin_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_darwin_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "c27d85371f486ae0849b8dc417d3303a5b16ddda7c034ab3c657f08583dcf7bd"
+      sha256 "886cb5e5cdcae4e412275f5f865e4f829ded26d03bc30a8852be57b7b427d3ed"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.0/ironflow_0.7.0_linux_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_linux_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "361ae61a1d4ac5693766bbaecf248f39cc2bb6f9861520780995bf8dbe4caf70"
+      sha256 "73ca84fbbb1b15cfe6e82ec5bd5f4979c89ed92fafb311555cdbcf5e0b764ae4"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.0/ironflow_0.7.0_linux_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_linux_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "b2a46f443024f83290b047ab3e79b15daff9c83c1a4e83c157c966054cd8c2a7"
+      sha256 "3dc46a424babeacc831214ae3dffc2be463a61e87dde4c7cd8633aa14a2cae0e"
     end
   end
 
