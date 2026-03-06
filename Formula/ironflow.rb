@@ -9,31 +9,31 @@ class Ironflow < Formula
   desc "Ironflow - Event-driven backend platform"
   homepage "https://github.com/sahina/ironflow"
   license "MIT"
-  version "0.7.1"
+  version "0.8.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_darwin_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.8.0/ironflow_0.8.0_darwin_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "0c2e94849faaee6d2e8c77b9d40c9207a4dfe566287a83f1bf96e14503799521"
+      sha256 "d6e1ef6503a66f734897c9f5721c5c216028a5ca2e99b7ab97ad014ad78713ec"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_darwin_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.8.0/ironflow_0.8.0_darwin_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "886cb5e5cdcae4e412275f5f865e4f829ded26d03bc30a8852be57b7b427d3ed"
+      sha256 "f55447fb665f85c222b01166c8a6052c0fad5858e5e9f4fc4e11267467b1db8b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_linux_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.8.0/ironflow_0.8.0_linux_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "73ca84fbbb1b15cfe6e82ec5bd5f4979c89ed92fafb311555cdbcf5e0b764ae4"
+      sha256 "4997163dfa78cafb15ff0e46e0fe6d8801bead0b16b2a4662cefbb34458b41a0"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.7.1/ironflow_0.7.1_linux_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.8.0/ironflow_0.8.0_linux_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "3dc46a424babeacc831214ae3dffc2be463a61e87dde4c7cd8633aa14a2cae0e"
+      sha256 "d5d298db9eee172c477d3793d4c57c1c4ef249ad8d1f2fd9be3aec9abd38b2c8"
     end
   end
 
