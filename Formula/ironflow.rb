@@ -9,31 +9,31 @@ class Ironflow < Formula
   desc "Ironflow - Event-driven backend platform"
   homepage "https://github.com/sahina/ironflow"
   license "MIT"
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.9.0/ironflow_0.9.0_darwin_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.10.0/ironflow_0.10.0_darwin_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "99c731c755e1e910b169effd7919df5c5d8f2bd200e193df6798102bf3f19d30"
+      sha256 "a847033bc93220d9adfb0be0e6be3590417d50db1294158b594aed1eade3cbc1"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.9.0/ironflow_0.9.0_darwin_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.10.0/ironflow_0.10.0_darwin_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "da964eb2e8afb92fae503998500cb193a2cdd6434d34e62141b2e77f2340e413"
+      sha256 "736e15124bc58c4743ba2d04e6dbd7c4df6cd6930f922acc177be951e5c4aaeb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.9.0/ironflow_0.9.0_linux_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.10.0/ironflow_0.10.0_linux_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "81242c2298e2db9b9d82bb81f2dd04dacd7268267b6450582e9db582fa10f82d"
+      sha256 "4ad5767ad4de44107abdbc6c6f562a65e2913ed461caa2c59ea21d5ee6c59371"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.9.0/ironflow_0.9.0_linux_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.10.0/ironflow_0.10.0_linux_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "77ea7872b7d7203b5bd931f32cad4d070bdca5b3e89d7df5522ea34751383c56"
+      sha256 "db2bf3b571ad3f34f8718ba82dac9f2b93ea82d0a37bc1d8cbdb9148a90f11ca"
     end
   end
 
