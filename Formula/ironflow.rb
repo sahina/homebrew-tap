@@ -9,31 +9,31 @@ class Ironflow < Formula
   desc "Ironflow - Event-driven backend platform"
   homepage "https://github.com/sahina/ironflow"
   license "MIT"
-  version "0.12.0"
+  version "0.13.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.12.0/ironflow_0.12.0_darwin_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.13.0/ironflow_0.13.0_darwin_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "dd4e6f21c8143445ff5636e26d540fdc2a8f5e8eddbbca3bde9673aff53923c1"
+      sha256 "c68eb501a1e2e1693b84867986c1bb044590dd5743f25a49132fb7d503b57e2d"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.12.0/ironflow_0.12.0_darwin_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.13.0/ironflow_0.13.0_darwin_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d5ba5a5970ebb5ed30a7f737219a464b903580e2e78f88c7c11c8a56a436b02f"
+      sha256 "0634afec263af80cd0144b6e5274210d2aff61c0800f9094f059a315a8d57d0e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/sahina/ironflow/releases/download/v0.12.0/ironflow_0.12.0_linux_amd64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.13.0/ironflow_0.13.0_linux_amd64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "646ee84955ed73e9e01e85d5b4d5f9dcfe92c31917cdfa74bc33dee355f92261"
+      sha256 "9c23fcb2b7477262bc4e604bc0af2cfe469725dd1ecfbd7abe30a037f6e8ac28"
     end
     on_arm do
-      url "https://github.com/sahina/ironflow/releases/download/v0.12.0/ironflow_0.12.0_linux_arm64.tar.gz",
+      url "https://github.com/sahina/ironflow/releases/download/v0.13.0/ironflow_0.13.0_linux_arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "835d7737b3bcecada8637fa1168d8f00a351e5e86f6be65b8a50e15a377f65a4"
+      sha256 "2aa2e0d2cefe942600d56b1e8f76bc960ae6a0d23ce958057965ca39c7f73afb"
     end
   end
 
