@@ -5,23 +5,23 @@
 class Cvt < Formula
   desc "Contract Validation Tool - Validate HTTP interactions against OpenAPI specs"
   homepage "https://github.com/sahina/cvt"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_darwin_amd64.tar.gz"
-      sha256 "6fd83f82b912efbc6352109a4fd45a09ec2bbe1b99e640d6367f22678ae4ba68"
+      url "https://github.com/sahina/cvt/releases/download/v0.4.0/cvt_0.4.0_darwin_amd64.tar.gz"
+      sha256 "13b444df3d3b0bbbfa6d8c902acd4493a69180bc104c8957e76c9ea30b78f664"
 
-      def install
+      define_method(:install) do
         bin.install "cvt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_darwin_arm64.tar.gz"
-      sha256 "bd8acb63664dacdb45fd6f16e92c732b9273de5894ce28020ea09d44558aae09"
+      url "https://github.com/sahina/cvt/releases/download/v0.4.0/cvt_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4a0ed1f6d823034716f3a650bc2b3367359fd6a792b74bf47318706a27428220"
 
-      def install
+      define_method(:install) do
         bin.install "cvt"
       end
     end
@@ -29,16 +29,16 @@ class Cvt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_linux_amd64.tar.gz"
-      sha256 "1c6b64ffe3f4cb94214343f0e42623a4361232242099d32292a0f79b23b62059"
-      def install
+      url "https://github.com/sahina/cvt/releases/download/v0.4.0/cvt_0.4.0_linux_amd64.tar.gz"
+      sha256 "fd56ca91336481098e3c9c6f1e25d5a04a34ce1768348926060fd30c33bcbb5c"
+      define_method(:install) do
         bin.install "cvt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/cvt/releases/download/v0.3.0/cvt_0.3.0_linux_arm64.tar.gz"
-      sha256 "e6c1ede76704c90f238059bd212986759b402a9b022f582da658162f2df617b0"
-      def install
+      url "https://github.com/sahina/cvt/releases/download/v0.4.0/cvt_0.4.0_linux_arm64.tar.gz"
+      sha256 "73d5dd4c272e345afcc68e964c2e023f84b28b83f7da9a4cfab1503883adadb1"
+      define_method(:install) do
         bin.install "cvt"
       end
     end
