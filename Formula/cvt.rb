@@ -5,21 +5,21 @@
 class Cvt < Formula
   desc "Contract Validation Tool - Validate HTTP interactions against OpenAPI specs"
   homepage "https://github.com/sahina/cvt"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sahina/cvt/releases/download/v0.5.0/cvt_0.5.0_darwin_amd64.tar.gz"
-      sha256 "15783da2cf68546d7ac6537714ae970ed882b58590c2d5303fdb6c9ca1ae738d"
+      url "https://github.com/sahina/cvt/releases/download/v0.6.0/cvt_0.6.0_darwin_amd64.tar.gz"
+      sha256 "82882fc92d96239494b6a191778166ce44fe074e671136c69bc82e416c3d7275"
 
       define_method(:install) do
         bin.install "cvt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sahina/cvt/releases/download/v0.5.0/cvt_0.5.0_darwin_arm64.tar.gz"
-      sha256 "44a6f7a5fae06e714a907b0d9fa4db81d5b59da2f4aed75e93da672b374ba9f1"
+      url "https://github.com/sahina/cvt/releases/download/v0.6.0/cvt_0.6.0_darwin_arm64.tar.gz"
+      sha256 "36d6a4f0229521920d44e53638c4c7bff9ad9b3dc8e8b81b064caa6e24432164"
 
       define_method(:install) do
         bin.install "cvt"
@@ -29,15 +29,15 @@ class Cvt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/cvt/releases/download/v0.5.0/cvt_0.5.0_linux_amd64.tar.gz"
-      sha256 "93e65c314f5cf8cabe1f5ff1e21fc2bf70273cda1bf66820d70f5169b264fccf"
+      url "https://github.com/sahina/cvt/releases/download/v0.6.0/cvt_0.6.0_linux_amd64.tar.gz"
+      sha256 "175d1e1764939e9b5eef3518faaaa3a5b34c329a2927f51d1c278326a8b8e704"
       define_method(:install) do
         bin.install "cvt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/cvt/releases/download/v0.5.0/cvt_0.5.0_linux_arm64.tar.gz"
-      sha256 "bf580f4f2c007fc226885a5b236165a66747a4474122dfb0afa5d5758ac93b2e"
+      url "https://github.com/sahina/cvt/releases/download/v0.6.0/cvt_0.6.0_linux_arm64.tar.gz"
+      sha256 "2dd4cbc49c9816b8a1414ad5840032a62b31e37e519ca445d88cc25cfee0e973"
       define_method(:install) do
         bin.install "cvt"
       end
