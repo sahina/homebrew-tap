@@ -16,13 +16,13 @@ changes are overwritten on the next publish.
 
 ## Bugs
 
-Issues are disabled on this repo. Report against the project, not the tap —
-including install and upgrade problems:
+Tap problems — a broken formula, a bad checksum, `brew tap` failing — belong
+[here](https://github.com/sahina/homebrew-tap/issues).
 
-- **Ironflow** (and the `ironflow` formula) →
-  [sahina/ironflow-issues](https://github.com/sahina/ironflow-issues/issues/new/choose)
-- **cvt** (and the `cvt` formula) →
-  [sahina/cvt/issues](https://github.com/sahina/cvt/issues)
+Bugs in the software itself go to the project:
+
+- **Ironflow** → [sahina/ironflow-issues](https://github.com/sahina/ironflow-issues/issues/new/choose)
+- **cvt** → [sahina/cvt/issues](https://github.com/sahina/cvt/issues)
 
 For Ironflow security disclosures use a
 [private advisory](https://github.com/sahina/ironflow-issues/security/advisories/new),
