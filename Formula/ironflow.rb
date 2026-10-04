@@ -5,21 +5,21 @@
 class Ironflow < Formula
   desc "Event-driven backend platform with durable workflows"
   homepage "https://ironflow.run"
-  version "0.41.0"
+  version "0.42.0"
   license "LicenseRef-Ironflow-EULA"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sahina/ironflow-releases/releases/download/v0.41.0/ironflow_0.41.0_darwin_amd64.tar.gz"
-      sha256 "d5c03eb67a80120a8e726b48d731180901c98b93354214862c7e311e18c928ad"
+      url "https://github.com/sahina/ironflow-releases/releases/download/v0.42.0/ironflow_0.42.0_darwin_amd64.tar.gz"
+      sha256 "4c72a96bd5e6bc0eeab86b7a874d5e7a2fdb6e2ca14293ec48ecf6b4ab50d127"
 
       define_method(:install) do
         bin.install "ironflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sahina/ironflow-releases/releases/download/v0.41.0/ironflow_0.41.0_darwin_arm64.tar.gz"
-      sha256 "7c736c95ff3a2dc1342e7e2f425cc44367ee7ba5316f332859a3caebfc9919a6"
+      url "https://github.com/sahina/ironflow-releases/releases/download/v0.42.0/ironflow_0.42.0_darwin_arm64.tar.gz"
+      sha256 "8fa90b7825a0987f4757dde50c434f5256cda5722e91125121079ae9acc5749a"
 
       define_method(:install) do
         bin.install "ironflow"
@@ -29,15 +29,15 @@ class Ironflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/ironflow-releases/releases/download/v0.41.0/ironflow_0.41.0_linux_amd64.tar.gz"
-      sha256 "923472299054156fd358e8cca500b67734005c5ef6ef0bd4c1f8b8272366bc94"
+      url "https://github.com/sahina/ironflow-releases/releases/download/v0.42.0/ironflow_0.42.0_linux_amd64.tar.gz"
+      sha256 "e6ed3c78a6abf28338b9257643f8ab637dd9d45596dd8d0e57c612a5ba9a4ec1"
       define_method(:install) do
         bin.install "ironflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sahina/ironflow-releases/releases/download/v0.41.0/ironflow_0.41.0_linux_arm64.tar.gz"
-      sha256 "8433817e172912b5dd97f8f608a27855de80f2401cecad10de252741acd69277"
+      url "https://github.com/sahina/ironflow-releases/releases/download/v0.42.0/ironflow_0.42.0_linux_arm64.tar.gz"
+      sha256 "424744fb4a11636718922e4dd48c9527cbd2de13d1ea3b997e6b8d0e926e8130"
       define_method(:install) do
         bin.install "ironflow"
       end
